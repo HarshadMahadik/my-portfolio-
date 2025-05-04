@@ -71,3 +71,12 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Toggle mobile menu
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.querySelector("#navbar ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
