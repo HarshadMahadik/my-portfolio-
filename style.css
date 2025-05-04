@@ -1,0 +1,209 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  header {
+    background: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .skills-list li {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project h3 {
+    font-size: 1.4em;
+    color: #333;
+  }
+  
+  .project p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .project img.project-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Limit the maximum width */
+    display: block; /* Ensures images do not have extra space below them */
+    margin-top: 15px;
+    border-radius: 5px; /* Optional: Adds rounded corners to the images */
+}
+
+.certification {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification h3 {
+    font-size: 1.6em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.certification p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.certification a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.certification a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 0px 0; /* Reduced padding for a smaller height */
+    box-shadow: none; /* Remove shadow for a clean look */
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
+    font-size: 1em; /* Adjust font size if necessary */
+    height: 90px;
+}
+
+#navbar .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center; /* Vertically center the items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#navbar ul li {
+    display: inline-block;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.active a {
+    background-color: #007bff;
+}
